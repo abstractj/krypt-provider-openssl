@@ -29,6 +29,14 @@
 #include "krypt-provider.h"
 #include "krypt-provider-ossl.h"
 
+/* Only for environment tests purposes */
+
+const char *
+krypt_version_string(void)
+{
+    return KRYPT_VERSION_STRING;
+}
+
 krypt_provider krypt_provider_ossl = {
     "openssl",
     krypt_ossl_init,

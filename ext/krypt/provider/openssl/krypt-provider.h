@@ -47,6 +47,11 @@
 #define KRYPT_ERR -1
 #endif
 
+/* Only for environment tests purposes */
+#define KRYPT_VERSION_STRING "0.1.0"
+
+const char *krypt_version_string(void);
+
 typedef struct krypt_provider_st krypt_provider;
 
 /* Message digest */
